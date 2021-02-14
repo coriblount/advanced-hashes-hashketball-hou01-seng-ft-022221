@@ -181,7 +181,7 @@ def num_points_scored(player_search)
  end
  
  def player_stats(input)
-   game_hash.each do |team, team_input|
+   game_hash.each do |team, team_info|
     team_info.each do |key,value|
       if key == :players
         value.each do |player|
