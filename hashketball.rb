@@ -180,7 +180,9 @@ def num_points_scored(player_search)
    return output
  end
  
- 
+ def player_stats(input)
+   binding.pry
+ end 
  
  def big_shoe_rebounds
   big_shoe = 0
