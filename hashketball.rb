@@ -179,3 +179,18 @@ def num_points_scored(player_search)
    end
    return output
  end
+ 
+ def player_stats(players_name)
+   game_hash.each do |team, team_value|
+    team_info.each do |key,value|
+      if key == :players
+        value.each do |player|
+          if input == player[:player_name]
+            player.delete(:player_name)
+            return player
+          end
+        end
+      end
+    end
+  end
+end
