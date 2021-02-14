@@ -172,3 +172,10 @@ def num_points_scored(player_search)
          if key == :players
            value.each do |player|
              output.push (player[:number])
+           end
+         end
+       end
+     end
+   end
+   return output
+ end
