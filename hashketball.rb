@@ -180,7 +180,7 @@ def num_points_scored(player_search)
    return output
  end
  
- def player_stats
+ def player_stats(player_name)
    binding.pry
  game_hash.each do |team, team_info|
     team_info.each do |key, value|
